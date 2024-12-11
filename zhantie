@@ -1,24 +1,5 @@
-conda config --remove-key channels
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --set show_channel_urls yes
-
-conda config --remove channels http://mirrors.blockelite.cn
-
-conda create -n open-mmlab python=3.8 -y --repodata-fn repodata.json
-
-ping mirrors.tuna.tsinghua.edu.cn
-
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/pkgs/main
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/pkgs/r
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/pkgs/msys2
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/conda-forge
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/msys2
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/bioconda
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/menpo
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/pytorch
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/pytorch-lts
-conda config --remove channels http://mirrors.blockelite.cn:15018/anaconda/cloud/simpleitk
+nano ~/.condarc
+删除所有内容，保存文件并退出。
 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
@@ -26,8 +7,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --set show_channel_urls yes
 
 
-
-
-conda clean -i
 conda create -n open-mmlab python=3.8 -y
 
+python -c "import torch; print(torch.__version__)"
