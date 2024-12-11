@@ -16,3 +16,5 @@ pip install ./mmcv_full-1.4.5-cp38-cp38-manylinux1_x86_64.whl
 cp /Downloads/mmcv_full-1.4.5-cp38-cp38-manylinux1_x86_64.whl /home/vipuser/
 
 ls /home/vipuser/ | grep mmcv_full
+
+pip install mmdet==2.14.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11/index.html
