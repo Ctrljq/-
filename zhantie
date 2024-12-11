@@ -7,6 +7,8 @@ conda config --remove channels http://mirrors.blockelite.cn
 
 conda create -n open-mmlab python=3.8 -y --repodata-fn repodata.json
 
+ping mirrors.tuna.tsinghua.edu.cn
+
 
 
 conda clean -i
