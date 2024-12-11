@@ -23,5 +23,9 @@ pip install mmsegmentation==0.14.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip uninstall setuptools -y
 pip install setuptools
 
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+
 
 
