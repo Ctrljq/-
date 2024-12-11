@@ -1,6 +1,8 @@
+conda config --remove-key channels
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
+
 
 conda clean -i
 conda create -n open-mmlab python=3.8 -y
