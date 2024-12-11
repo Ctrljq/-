@@ -3,6 +3,8 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
 
+conda config --remove channels http://mirrors.blockelite.cn
+
 
 conda clean -i
 conda create -n open-mmlab python=3.8 -y
