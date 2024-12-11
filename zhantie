@@ -15,3 +15,4 @@ pip install ./mmcv_full-1.4.5-cp38-cp38-manylinux1_x86_64.whl
 
 cp /Downloads/mmcv_full-1.4.5-cp38-cp38-manylinux1_x86_64.whl /home/vipuser/
 
+ls /home/vipuser/ | grep mmcv_full
