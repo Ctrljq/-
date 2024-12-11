@@ -11,5 +11,6 @@ conda create -n open-mmlab python=3.8 -y
 
 python -c "import torch; print(torch.__version__)"
 
-pip install ./mmcv_full-1.4.5-cp38-cp38-win_amd64.whl
+pip install ./mmcv_full-1.4.5-cp38-cp38-manylinux1_x86_64.whl
+
 
