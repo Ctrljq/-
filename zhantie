@@ -5,6 +5,9 @@ conda config --set show_channel_urls yes
 
 conda config --remove channels http://mirrors.blockelite.cn
 
+conda create -n open-mmlab python=3.8 -y --repodata-fn repodata.json
+
+
 
 conda clean -i
 conda create -n open-mmlab python=3.8 -y
