@@ -25,3 +25,8 @@ pip install --upgrade pkg_resources
 
 pip install packaging
 
+pip show setuptools
+pip show packaging
+pip show pkg_resources
+
+
