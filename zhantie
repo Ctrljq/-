@@ -20,13 +20,8 @@ ls /home/vipuser/ | grep mmcv_full
 pip install mmdet==2.14.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install mmsegmentation==0.14.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip install --upgrade setuptools
-pip install --upgrade pkg_resources
+pip uninstall setuptools -y
+pip install setuptools
 
-pip install packaging
-
-pip show setuptools
-pip show packaging
-pip show pkg_resources
 
 
